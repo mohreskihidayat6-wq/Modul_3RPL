@@ -38,6 +38,9 @@ class BukuView(ctk.CTk):
         self.btn_hapus = ctk.CTkButton(self.frame_kiri, text="Hapus Data (Delete)", fg_color="red")
         self.btn_hapus.pack(pady=10, padx=15, fill="x")
 
+        self.btn_logout = ctk.CTkButton(self.frame_kiri, text="Logout", fg_color="gray")
+        self.btn_logout.pack(pady=(20, 10), padx=15, fill="x")
+        
         # Frame kanan: tabel daftar buku
         self.frame_kanan = ctk.CTkFrame(self)
         self.frame_kanan.grid(row=0, column=1, padx=10, pady=10, sticky="nsew")
